@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Sorting Visualizer</title>
+</head>
+<body>
+    <nav class="navbar navbar-dark border bg-dark">
+        <div class="container-fluid">
+            <div class="col">
+                <a class="navbar-brand" href="index.html" style="font-size: 35px;">Sorting Visualizer</a>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar border bg-light">
+        <div class="container-fluid">
+            <div class="col pl-5 pr-5">
+                <div class="slidecontainer d-flex flex-column align-items-center" id="sizeSet">
+                    <a class="navbar-brand">Array Size</a>
+                    <input type="range" min="10" max="200" value="105" class="slider" id="size">
+                </div>
+            </div>
+            <div class="col  pl-5 pr-5">
+                <div class="slidecontainer d-flex flex-column align-items-center">
+                    <a class="navbar-brand">Animation speed</a>
+                    <input type="range" min="10" max="1000" value="500" class="slider" id="speed">
+                </div>
+            </div>
+            <div class='col pl-5 pr-5'>
+                <select class="navbar-brand btn btn-lg" id="algo" style="color: #0275d8; background-color: #f7f7f7;">
+                    <!-- generate algorithm list using script.js -->
+                </select>
+            </div>
+            <div class="col pl-5 pr-5">
+                <button class="btn btn-outline-danger btn-block" id="stop" hidden="hidden">Stop</button>
+                <button class="btn btn-outline-primary btn-block" id="sort">Sort</button>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid" style="padding-top: 50px;">        
+        <div class="row d-flex align-items-end justify-content-center">
+            <div class="container-fluid d-flex align-items-end justify-content-center" id="graph" style="height: 410px;">
+                <!-- generate bar graph using script.js -->
+            </div>
+        </div> 
+        <div class="row d-flex align-items-center justify-content-end pr-3" style="height: 50px; color: aliceblue; background-color: #292b2c;">
+            &#169 Copyright 2020
+        </div> 
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
